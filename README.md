@@ -6,14 +6,14 @@ Terraform is a powerful tool for infrastructure as code, but like any tool, it c
 
 1. When executing Terraform plan for Easyshop project I got this error
     
-    **Error:**
+    **Error: Unsupported argument**
     
-    │ Error: Unsupported argument
+    `│ Error: Unsupported argument
     │
     │   on .terraform/modules/eks/main.tf line 420, in resource "aws_eks_addon" "before_compute":
     │  420:   resolve_conflicts        = try(each.value.resolve_conflicts, "OVERWRITE")
     │
-    │ An argument named "resolve_conflicts" is not expected here.
+    │ An argument named "resolve_conflicts" is not expected here.`
     
     **Fix:**
     
